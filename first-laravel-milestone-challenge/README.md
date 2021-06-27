@@ -1,62 +1,93 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# Laravel Learning Flow - Roadmap
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+### Basic:
+[*] Laravel Directory Structure <br>
+[*] Create first page <br>
 
-## About Laravel
+**REF:** https://laravel.com/docs/8.x/structure
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
+### Routing:
+[*] What is Routing and make Basic dummy route <br>
+[*] Pass parameter in url <br>
+[*] Optional Parameter <br>
+[*] Regular Expression Constraints <br>
+[*] Route Prefixes <br>
+[*] Named Routes <br?>
+[*] anchor Tags <br>
+[*] Redirection <br>
+[*] Fallback Routes <br>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+**REF:** https://laravel.com/docs/5.1/routing
+**REF:** https://www.w3schools.com/php/php_regex.asp
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### Controller:
+[*] What is Controller<br>
+[*] Create a First Controller<br>
+[*] Make function in controller<br>
+[*] Call controller from routing<br>
+[*] Pass parameter with url<br>
+[*] Optional Parameters Controlller<br>
+[*] Resource Controllers<br>
 
-## Learning Laravel
+**REF:** https://laravel.com/docs/8.x/controllers#single-action-controllers
+ - `php artisan make:controller AnyControllerName`
+ - `php artisan make:controller PhotoController --resource`
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### View:
+[*] What is View<br>
+[*] Create a First View<br>
+[*] Call View<br>
+[*] Call By Router<br>
+[*] Call By Controller<br>
+[*] Passing Data To Views<br>
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+**REF:** https://laravel.com/docs/8.x/views
+---
 
-## Laravel Sponsors
+### Component:
+[*] What is Component<br>
+[*] Create a First Component<br>
+[*] Use Components <br>
+[*] Passing Data To Components <br>
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+**REF:** https://laravel.com/docs/8.x/blade#components
+ - `php artisan make:component ComponentName`
+---
 
-### Premium Partners
+### Blade Template:
+[*] What is Blade Template<br>
+[*] Template inheritance <br>
+[*] Conditional rendering <br>
+[*] Blade Directives[@yield,@section,@include,@extends,@forEach]<br>
+[*] Php in js<br>
+[*] Csrf token<br>
+[*] Layouts Using Template Inheritance<br>
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
+**REF:** https://laravel.com/docs/8.x/blade
+ - **@section** directive, as the name implies, defines a section of content
+ - **@yield** directive is used to display the contents of a given section.
+ - **@extends** Blade directive to specify which layout the child view should "inherit". Views which extend a Blade layout may inject content into the layout's sections using @section directives.
+ - **@include** directive allows you to include a Blade view from within another view.
 
-## Contributing
+---
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### Blade HTML Form:
+[*] Create Html Form<br>
+[*] Create GET Route to Show Form<br>
+[*] Create Controller For Handel Form data<br>
+[*] Create Post Route For submit Request<br>
 
-## Code of Conduct
+---
+### Blade HTML Form Validation:
+[*] Use Validation functions<br>
+[*] Show error message<br>
+[*] Error with every field<br>
+[*] Prefill data every field<br>
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+**REF:** https://laravel.com/docs/8.x/validation#introduction
+---
 
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## 1st MileStone Challenge
