@@ -91,3 +91,13 @@
 ---
 
 ## 1st MileStone Challenge
+ <h2><b>Question:</b> Make a blog using above topic try to write code as optimize as you can.</h3>
+    <ul>
+        <li>Don't Write same code for every page</li>
+        <li> Try to code Simple and Clean code</li>
+        <li> Must Include Validation in Parameter</li>
+        <li> Must include Form Validation</li>
+        <li> Must include Prefill fields</li>
+        <li> Must Include 404 Page</li>
+        <li> At least make one component which Handel data between php to json (Show All post via js)  </li>
+      </ul>
